@@ -56,6 +56,11 @@ max-width: 98%;
 
 }
 
+a,a:visited{
+color: yellow;
+text-decoration: none;
+}
+
 svg{
 
 position: fixed;
@@ -160,7 +165,10 @@ let section= document.querySelector("section");
 
 				
 
-let a= `Hello, this domain is reserved by @Kawiesh`;
+let a= `Hey there!,
+this domain is
+reserved by
+@Kawiesh`;
 
 let b= document.querySelector("div");
 
@@ -182,7 +190,7 @@ if(i==a.length){
 
 //svg.style.height= 2.5*(b.offsetHeight);
 
-b.classList.add("blink");
+//b.classList.add("blink");
 b.innerHTML= b.innerHTML.replace(/@Kawiesh/,"<a href='https://twitter.com/Kawiesh'>@Kawiesh</a>");
 
 }
